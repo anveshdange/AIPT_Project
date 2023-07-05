@@ -1,0 +1,8 @@
+# grpcio==1.36.1
+numpy 
+pandas  
+matplotlib 
+pandas_datareader
+yfinance
+tensorflow
+scikit-learn
