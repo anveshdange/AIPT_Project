@@ -66,7 +66,7 @@ for i in range(100, data_training_array.shape[0]) :
     y_train.append(data_training_array[i, 0])
 
 # loading the model 
-model = load_model('LSTM_MODEL.h5')
+model = load_model('LSTM_Model.h5')
 
 # testing our model 
 past_100_days = data_training.tail(100)
