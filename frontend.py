@@ -23,11 +23,11 @@ user_input = st.text_input("Enter Stock Ticker", TICKER)
 print("Downloading Data")
 df: pd.DataFrame = pd.DataFrame(yf.download(user_input, start=START, end=END))
 FILE: str = f"{user_input}.csv"
-os.makedirs("data", exist_ok=True)
+# os.makedirs("data", exist_ok=True)
 FILE_PATH: Path = os.path.join("data", FILE)
 print(f'Converting Data to CSV: {FILE}')
 
-df.to_csv(FILE_PATH)
+# df.to_csv(FILE_PATH)
 print(f"{FILE} created Successfully")
 
 # Describing data
